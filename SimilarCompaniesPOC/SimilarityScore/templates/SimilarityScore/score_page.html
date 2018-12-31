@@ -1,0 +1,69 @@
+{% extends "SimilarityScore/base.html" %}
+
+{% block content %}
+    <form method="post" enctype="multipart/form-data" class="col-md-8" style="margin: 30px auto;padding: 15px;border: 1px solid #dadada;border-radius: 5px;">
+        {% csrf_token %}
+        <legend style="position: absolute;top: -13px;font-size: 19px;background-color: #fff;width: 210px;padding-left: 10px;">New Company Details</legend>
+        <div class="row" style="margin-top: 20px;">
+                <div class="form-group col-md-6">
+                        <label for="formGroupExampleInput">Total Employee Count:</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Employee Count" name="company_head_count">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="formGroupExampleInput2">Co-ordinates(Latitude, Longitude)</label>
+                        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Location" name="company_location">
+                    </div>
+                    <div class="col-md-6">
+                            <label>Select Company Industry</label>
+                            <select class="custom-select" name="company_industy">
+                                    <option selected disabled>Select Industry</option>
+                                    <option value="1">Design</option>
+                                    <option value="2">Military</option>
+                                    <option value="3">Package/Freight Delivery</option>
+                                    <option value="4">Government Administration</option>
+                                    <option value="5">Public Safety</option>
+                                    <option value="6">Insurance</option>
+                                    <option value="7">Telecommunications</option>
+                                    <option value="8">Public Service</option>
+                                    <option value="9">Airlines/Aviation</option>
+                                    <option value="10">Information Technology and Services</option>
+                                    <option value="11">Financial Services</option>
+                                    <option value="12">Individual & Family Services</option>
+                            </select>
+                        </div>
+                    <div class="col-md-6">
+                        <label>Select Company Type</label>
+                        <select class="custom-select" name = "company_type">
+                                <option selected disabled>Select Company Type</option>
+                                <option value="1">Government</option>
+                                <option value="2">Private</option>
+                        </select>
+                    </div>
+        </div>
+        <div class="form-group col-md-12 text-center mt-4">
+                <button type="submit" class="btn btn-info" value="Submit">Calculate</button>
+            </div>
+    </form>
+
+    {% if scores %}
+        <div class="row container" style="margin: 20px auto;">
+            <div class="col-md-6 " style="border: 2px solid #dadada;">
+                    <h3>Company Name</h3>
+            </div>
+            <div class="col-md-6 text-right" style="border: 2px solid #dadada;">
+                    <h3>Similarity Scores:</h3>
+            </div>
+            
+            {% for score in scores %}
+            <div class="col-md-6" style="border: 1px solid #dadada;">
+                    <label>{{ score.Name }}</label>
+            </div>
+            <div class="col-md-6 text-right" style="border: 1px solid #dadada;">
+                    <span class="badge badge-info">{{ score.Score }} <span style="font-size: 14px;">/ 5</span></span>
+            </div>
+                
+            {% endfor %}
+                
+        </div>
+    {% endif %}
+{% endblock content %}
