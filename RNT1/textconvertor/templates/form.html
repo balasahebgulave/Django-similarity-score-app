@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class='container' style='background-color: lightblue'>
+	<form method="post" action="" enctype="multipart/form-data">
+		{% csrf_token %}
+
+		<p>{{form.as_p}}</p>
+		
+		<button type='submit' style="color: blue">Upload image</button>
+	</form>
+</div>
+
+{% endblock %}

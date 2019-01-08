@@ -1,0 +1,98 @@
+﻿.hserviceBox {
+    text-align: center;
+    padding: 30px;
+    margin: 0 -15px;
+    overflow: hidden;
+    position: relative;
+}
+
+    .hserviceBox:first-child {
+        margin-right: 10px;
+    }
+
+    .hserviceBox .service-content {
+        border: 4px double rgba(255,255,255,0.6);
+        padding: 40px 30px 20px;
+        position: relative;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .hserviceBox:hover .service-content {
+        border: 4px double rgb(255,255,255);
+    }
+
+    .hserviceBox .service-content i {
+        font-size: 30px;
+        color: #fff;
+        margin-bottom: 10px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .hserviceBox:hover .service-content i {
+        transform: rotate(360deg);
+    }
+
+    .hserviceBox .title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .hserviceBox .description {
+        font-size: 14px;
+        color: #fff;
+        line-height: 25px;
+    }
+
+    .hserviceBox a {
+        position: absolute;
+        left: 38%;
+        bottom: 20px;
+        border: 2px solid rgb(255,255,255);
+        padding: 5px 25px;
+        color: #fff;
+    }
+
+        .hserviceBox a:hover {
+            border: 2px solid rgb(255,255,255);
+            background: #fff;
+            color: #000000;
+        }
+
+    .hserviceBox .hicon-bg {
+        font-size: 250px;
+        color: rgba(255, 255, 255, 0.3);
+        line-height: 120px;
+        position: absolute;
+        bottom: 0;
+        right: -30px;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    .hserviceBox:hover .hicon-bg {
+        transform: rotate(360deg);
+    }
+
+    .hserviceBox.grey {
+        background: #297e8b;
+    }
+
+    .hserviceBox.orange {
+        background: #f05b47;
+        /*background:#fa8821;*/
+    }
+
+.demo-box{
+    border: 1px solid red;
+    height: 554px!important;
+}
+
+@media only screen and (max-width: 990px) {
+    .hserviceBox {
+        margin-bottom: 30px;
+    }
+}
+
+
+

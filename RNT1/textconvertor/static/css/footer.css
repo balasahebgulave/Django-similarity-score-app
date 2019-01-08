@@ -1,0 +1,137 @@
+﻿
+footer {
+    /*background:#ebebeb;*/
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+    footer h6 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        line-height:0px;
+        
+    }
+
+.primary-footer {
+       background: #4c4d4f;
+    padding: 5px 71px;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.primary-footer .copyright {
+        text-align: center;
+        color:#fff;
+        font-weight: 400;
+        
+    }
+
+.footer-about {
+    color:#fff;
+    font-size:13px;
+}
+
+ul.footer-menu {
+    
+}
+
+    ul.footer-menu li {
+    }
+
+        ul.footer-menu li a {
+            color: #fff;
+            display: block;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 15px;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        ul.footer-menu li:last-child a {
+            padding-bottom: 0;
+        }
+
+        ul.footer-menu li a:hover {
+            color: #00aeef;
+            padding-left: 5px;
+        }
+
+/*.footer-menu a{
+    
+    line-height:30px;
+    color:#6d6d6d;
+}*/
+
+
+.secondary-footer {
+    background: #00aeef;
+    padding: 25px 0;
+    border-top: 1px solid #00aeef;
+    width: 100%;
+    font-weight: 300;
+    color: #fff;
+    z-index:400;
+}
+
+    .secondary-footer .copyright {
+        text-align: left;
+    }
+
+    .secondary-footer .designby {
+        text-align: right;
+    }
+
+    .secondary-footer .col-md-6:last-child {
+        color: #fff;
+    }
+
+    .secondary-footer .designby a {
+        color: #00aeef;
+    }
+
+        .secondary-footer .designby a:hover {
+            color: #00aeef;
+        }
+
+/* 
+Social Link Widget
+------------------------------------------------ */
+.social-link {
+    margin-bottom: 0;
+}
+
+    .social-link li {
+        display: inline-block;
+        margin-right: 5px;
+    }
+
+        .social-link li a i {
+            display: block;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            border-radius: 50%;
+        }
+
+        .social-link li a i {
+            color: #fff;
+            background: #00aeef;
+        }
+
+            .social-link li a i:hover {
+                color: #00aeef;
+                background: #fff;
+            }
+
+    .social-link.dark li a i {
+        color: #202020;
+    }
+
+        .social-link.dark li a i:hover {
+            color: #fff;
+            background: #03a9f4;
+        }

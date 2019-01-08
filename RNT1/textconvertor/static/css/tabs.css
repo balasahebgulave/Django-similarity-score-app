@@ -1,0 +1,295 @@
+﻿/* Tab */
+#tabslider {
+    border: 0px solid red;
+    margin-top: -30px;
+    background: #fff;
+}
+
+
+/*------------------------------------------------------------------
+    tabs
+-------------------------------------------------------------------*/
+
+.nav-tabs > li > a,
+.nav-tabs.nav-justified > li > a {
+    margin-right: -1px;
+    border: 1px solid #00aeef;
+    border-radius: 0;
+    background: #00aeef;
+    color: #fff;
+    text-transform: capitalize;
+    /*font-family: 'Abel', sans-serif;*/
+    letter-spacing: 1px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover,
+.nav-tabs.nav-justified > .active > a, .nav-tabs.nav-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:hover {
+    cursor: default;
+    background-color: #010a25;
+    border: 1px solid #010a25;
+    border-bottom-color: transparent;
+    color: #fff;
+}
+
+.nav-tabs {
+    border-bottom: 0px solid #ffcc01;
+    position: absolute;
+    margin-top: -30px;
+    z-index: 555;
+}
+
+    .nav-tabs > li > a:hover {
+        /*border-color: #eee #eee #eee;*/
+    }
+
+    .nav-tabs > li > a {
+        /*padding: 20px 76px;*/
+        padding: 20px 0 20px 0;
+        width: 380px;
+        text-align: center;
+    }
+
+
+
+        .nav-tabs > li > a:hover {
+            background-color: #010a25;
+            border: 1px solid #010a25;
+        }
+
+
+
+.tab-pane {
+    line-height: 30px;
+}
+
+.tab-content {
+    font-family: 'Open Sans', sans-serif;
+}
+
+    .tab-content .tab-img {
+        border: 1px solid red;
+    }
+
+/*normal tabs*/
+
+.normal-tabs .panel-body {
+    padding: 0px;
+    background: #ededed;
+    position: relative;
+    z-index: 55;
+}
+
+.normal-tabs ul.nav-tabs {
+}
+
+/*border tabs*/
+
+.border-tabs .panel-body {
+    padding: 30px;
+    border: 0px solid #eee;
+    margin-top: -1px;
+}
+
+.tab1-bg {
+    background: url("../images/adm-tab-img.jpg") left 0px no-repeat!important;
+}
+
+.tab2-bg {
+    background: url("../images/zo-tab-img.jpg") left 0px no-repeat!important;
+}
+
+.tab3-bg {
+    background: url("../images/ps-tab-img.jpg") left 0px no-repeat!important;
+}
+
+.tab4-bg {
+    background: url("../images/ts-tab.jpg") left 0px no-repeat!important;
+}
+
+.right-side, .left-side {
+    padding: 30px 0px 100px 150px;
+}
+
+.post-single .post-desk {
+    padding: 30px 0;
+    height: 309px;
+    position: relative;
+}
+
+    .post-single .post-desk h4 {
+        font-family: 'Open Sans', sans-serif;
+        color: #000;
+    }
+
+    .post-single .post-desk p {
+        color: #000;
+    }
+
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #010a25;
+    position: absolute;
+    margin-top: 21px;
+    margin-left: 175px;
+    display: none;
+}
+
+.nav-tabs > li.active > a > .arrow-down {
+    display: block;
+}
+
+
+#tabslider {
+}
+
+    #tabslider h4 {
+        color: #000;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    #tabslider p {
+        color: #000;
+        font-family: 'Open Sans', sans-serif;
+        text-align: justify;
+        font-size: 14px;
+    }
+
+    #tabslider img {
+        margin: 10px auto;
+    }
+
+.tabcontent {
+
+}
+
+    .tabcontent .col-md-6 {
+        width: 50%;
+        right:95px;
+    }
+
+/* Responsive */
+@media only screen and (min-width : 1824px) {
+    .tabcontent .col-md-6 {
+        width: 65%;
+        right:95px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .tabcontent .col-md-6 {
+        width: 450px;
+        right: 105px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-tabs > li > a {
+        width: 235px;
+        font-size: 14px;
+    }
+
+    .arrow-down {
+        margin-left: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .nav-tabs > li > a {
+        width: 180px;
+        font-size: 14px;
+    }
+
+    .arrow-down {
+        margin-left: 75px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-tabs {
+        margin-top: -30px;
+    }
+
+        .nav-tabs > li > a {
+            width: 240px;
+            font-size: 14px;
+        }
+
+    .arrow-down {
+        margin-left: 100px;
+    }
+
+    .tabcontent .col-md-6 {
+        width: 700px;
+        right: 170px;
+        margin-top: 30px;
+    }
+
+    .tabcontent {
+        height: 350px;
+    }
+
+    .post-single .post-desk p {
+    }
+
+    .post-single .post-desk .know-more {
+        text-decoration: underline;
+        font-weight: 600;
+        color: #00aeef;
+        border-bottom: 1px solid #00aeef;
+    }
+
+        .post-single .post-desk .know-more:hover {
+            color: #323232;
+            border-bottom: 1px solid #323232;
+            font-weight: 600;
+        }
+}
+
+@media screen and (max-width: 600px) {
+
+    .nav-tabs {
+        position: relative;
+        margin-left: 10px;
+    }
+
+        .nav-tabs > li > a {
+            width: 550px;
+            font-size: 14px;
+        }
+
+    .arrow-down {
+        margin-left: 250px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .nav-tabs {
+        position: relative;
+        margin-left: 5px;
+    }
+
+        .nav-tabs > li > a {
+            width: 280px;
+            font-size: 14px;
+        }
+
+    .arrow-down {
+        margin-left: 125px;
+    }
+
+    .tabcontent {
+        height: 550px;
+    }
+
+        .tabcontent .post-single {
+            margin-top: -20px;
+        }
+}

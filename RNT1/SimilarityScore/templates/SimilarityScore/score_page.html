@@ -1,0 +1,159 @@
+{% extends "SimilarityScore/base.html" %}
+
+{% block content %}
+
+<div class="row">
+<div class="col-md-5">
+                <form method="post" action = "score1" enctype="multipart/form-data" class="col-md-10" id="similarityScoreForm" style="margin: 30px auto;padding: 15px 20px;border: 1px solid #dadada;border-radius: 5px;">
+                        {% csrf_token %}
+                        <legend style="position: absolute;top: -13px;font-size: 19px;background-color: #fff;width: 210px;padding-left: 10px;">New Company Details</legend>
+                        <div class="row" style="margin-top: 20px;">
+                                <div class="form-group col-md-12">
+                                        <label for="formGroupExampleInput">Total Employee Count:</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Employee Count" name="company_head_count" required>
+                                        </div>
+                                <div class="form-group col-md-12">
+                                        <label for="formGroupExampleInput">Company Age</label>
+                                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Company Age" name = "company_age">
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                        <label for="formGroupExampleInput2">City</label>
+                                        <select class="custom-select" name="city" required>
+                                                <option selected disabled>Select City</option>
+                                                <option value="Greater Sudbury"> Greater Sudbury </option>
+                                                <option value="Kawartha Lakes"> Kawartha Lakes </option>
+                                                <option value="Timmins"> Timmins </option>
+                                                <option value="Ottawa"> Ottawa </option>
+                                                <option value="Chatham-Kent"> Chatham-Kent </option>
+                                                <option value="Norfolk County"> Norfolk County </option>
+                                                <option value="Haldimand County"> Haldimand County </option>
+                                                <option value="Hamilton"> Hamilton  </option>
+                                                <option value="1Prince Edward County">Prince Edward County  </option>
+                                                <option value="Brant"> Brant </option>
+                                                <option value="Calgary"> Calgary </option>
+                                                <option value="Elliot Lake"> Elliot Lake </option>
+                                                <option value="Edmonton"> Edmonton </option>
+                                                <option value="Toronto"> Toronto </option>
+                                                <option value="Quinte West"> Quinte West  </option>
+                                                <option value="Winnipeg"> Winnipeg </option>
+                                                <option value="Kingston"> Kingston </option>
+                                                <option value="St. John's"> St. John's</option>
+                                                <option value="London">London </option>
+                                                <option value="Whitehorse"> Whitehorse</option>
+                                                <option value="Abbotsford"> Abbotsford</option>
+                                                <option value="Thunder Bay">Thunder Bay </option>
+                                                <option value="North Bay"> North Bay</option>
+                                                <option value="Prince George"> Prince George</option>
+                                                <option value="Surrey"> Surrey</option>
+                                                <option value="Saint John"> Saint John</option>
+                                                <option value="Kamloops">Kamloops </option>
+                                                <option value="Clarence-Rockland"> Clarence-Rockland</option>
+                                                <option value="Mississauga"> Mississauga </option>
+                                                <option value="Vaughan"> Vaughan</option>
+                                                <option value="Brampton">Brampton </option>
+                                                <option value="Gillam"> Gillam</option>
+                                                <option value="Leaf Rapids"> Leaf Rapids</option>
+                                                <option value="Snow Lake"> Snow Lake</option>
+                                                <option value="Lynn Lake"> Lynn Lake</option>
+                                                <option value="Huntsville"> Huntsville</option>
+                                                <option value="Caledon"> Caledon</option>
+                                                <option value="Laurentian Hills">Laurentian Hills </option>
+                                                <option value="Bracebridge"> Bracebridge</option>
+                                                <option value="Iroquois Falls"> Iroquois Falls </option>
+                                                <option value="Moosonee"> Moosonee </option>
+                                                <option value="Cochrane"> Cochrane</option>
+                                                <option value="South Bruce Peninsula"> South Bruce Peninsula</option>
+                                                <option value="Kearney"> Kearney</option>
+                                                <option value="Lakeshore">Lakeshore </option>
+                                                <option value="Blind River">Blind River </option>
+                                                <option value="Mississippi Mills">Mississippi Mills </option>
+                                                <option value="Gravenhurst"> Gravenhurst</option>
+                                                <option value="Northeastern Manitoulin and the Islands"> Northeastern Manitoulin and the Islands</option>
+                                                <option value="Greater Napanee"> Greater Napanee</option>
+                                                <option value="Baie Verte"> Baie Verte </option>
+                                                <option value="Milton"> Milton</option>
+                                                <option value="Plympton-Wyoming"> Plympton-Wyoming</option>
+                                                <option value="Happy Valley-Goose Bay"> Happy Valley-Goose Bay</option>
+                                                <option value="Minto"> Minto</option>
+                                                <option value="Erin"> Erin</option>
+                                                <option value="Georgina">Georgina </option>
+                                                <option value="The Blue Mountains"> The Blue Mountains</option>
+                                                <option value="Innisfil"> Innisfil</option>
+                                                <option value="Essex"> Essex</option>
+                                                <option value="Mono"> Mono</option>
+                                                <option value="Halton Hills"> Halton Hills</option>
+                                                <option value="New Tecumseth"> New Tecumseth</option>
+                                                <option value="Regina"> Regina</option>
+                                                <option value="Gatineau">Gatineau</option>
+                                                <option value="Toronto"> Toronto</option>
+                                                <option value="Charlottetown"> Charlottetown</option>
+                                                <option value="Scarborough"> Scarborough</option>
+                                                <option value="Calgary">Calgary</option>
+                                                <option value="Greenway">Greenway</option>
+                                                </select>                                        
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                                <label>Select Company Industry</label>
+                                                <select class="custom-select" name="company_industy" required>
+                                                        {% for i,j in total_industry_list %}
+                                                        <option value="{{i}}">{{j}}</option>
+                                                        {% endfor %}               
+                                                </select>
+                                        </div>
+                                        <div class="form-group col-md-12">
+                                        <label>Select Company Type</label>
+                                        <select class="custom-select" name = "company_type" required>
+                                                <option selected disabled>Select Company Type</option>
+                                                {% for i,j in total_types_list %}
+                                                                <option value="{{i}}">{{j}}</option>
+                                                {% endfor %}
+                                        </select>
+                                        </div>
+                        </div>
+                        <div class="form-group col-md-12 text-center mt-4">
+                                <button type="submit" class="calculateButton btn btn-info " value="Submit">Calculate</button>
+                        </div>
+                        </form>
+</div>
+<div class="col-md-7">
+        {% if scores %}
+                <div class="row container" style="margin: 20px auto;">
+                        <table id="myTable" class="table table-bordered display" style="width: 100%;">
+                                <thead>
+                                        <tr>
+                                        <th>Company Name</th>
+                                        <th>Similarity Scores</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        {% for score in scores %}
+                                        
+                                        <tr>
+                                                <td>{{ score.Name }}</td>
+                                                <td class="text-center">{{ score.Score }}</td>
+                                        </tr>
+                                        {% endfor %}
+
+                                </tbody>
+                        </table>   
+
+
+                        
+                </div>
+        {% endif %}
+</div>
+</div>
+
+<script>
+$(document).ready( function () {
+        $('#myTable').DataTable({
+                /* "order": [[ 0, 'asc' ], [ 1, 'desc' ]] */
+                
+                /* "order": [[ 0, 'asc' ]] */
+                 "order": [[ 1, 'desc' ]] 
+        });
+        
+} );
+</script>
+
+{% endblock content %}

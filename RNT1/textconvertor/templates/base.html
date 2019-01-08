@@ -1,0 +1,115 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Demos</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico in the root directory -->
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/font-awesome.min.css'%}"/>
+    <link rel="stylesheet" href="{% static '/css/fonts.css' %}"/>
+    <link rel="stylesheet" href="{% static '/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/reset.css' %}">
+    <link rel="stylesheet" href="{% static '/css/header.css' %}">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}"/>
+    <link rel="stylesheet" href="{% static '/css/service-box.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/tabs.css' %}"/>
+    <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+    <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+    <title></title>
+<style type="text/css">
+    form{
+    background-color: lightblue;
+    color: white;
+    padding: 10px 10px;
+    margin: 4px 2px;
+    
+</style>    
+</head>
+<body>
+
+
+
+    <div class="wrapper">
+        <header id="header" class="tt-nav nav-boxed-color " style="position:fixed;top:0px;">
+            <div class="header-sticky light-header ">
+                <div class="container">
+                    <div id="matrox-menu" class="menuzord">
+                        <!--logo start-->
+                        <a href="/" class="logo-brand">
+                            <img class="retina" src="{% static '/images/logo-new.png' %}" alt="" />
+                        </a>
+                        <!--logo end-->
+                        <!--mega menu start-->
+                         <ul class="menuzord-menu pull-right">
+                           
+                          <li style="font-size: 30px;padding-left: -97px;padding: 36px 292px 10px 10px;color: #000;">
+                            RNT.AI Deep Learning OCR Demos
+                           
+                          </li>
+                        </ul>
+                        <!--mega menu end-->
+                    </div>
+                </div>
+            </div>
+</header><br>
+
+
+<div class="container-fluid">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="{% url 'homepage' %}"{% url 'homepage' %}>Optical Charactor Recognition</a>
+        </div>
+        <ul class="nav navbar-nav">
+        <li><a href="{% url 'form' %}"><button>Browse Document</button></a></li>
+          <li><a href="{% url 'home' %}"><button>Bounding Box</button></a></li>
+          <li><a href="{% url 'text' %}"><button>Text</button></a></li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+<div class="container-fluid">
+<p>For customers with images but no labels yet, we provide a team of real-life people to review your custom instructions and classify your images accordingly. You will get training data with the same quality and throughput Google gets for its own products, while your data remains private. You can use the human-labeled data seamlessly to train a custom model.</p>
+</div>
+
+<div class="container-fluid">
+{% block content %}
+
+{% endblock %}
+</div>
+
+<footer>
+            <div class="primary-footer">
+                <div class="container" style=" margin-left: 35px;">
+                   
+                    <div class="row">
+                       
+                        <div class="col-md-12 copyright">
+                        <img src="{% static '/images/logo-light-icon.png' %}" width="35px;">
+                            &copy; Copyright 2018. Rabbit and Tortoise Technology Solutions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>  
+    
+<script src="{% static '/js/jquery-1.10.2.min.js' %}"></script>
+    <script src="{% static '/js/bootstrap.min.js' %}"></script>
+    <script src="{% static '/js/menuzord.js' %}"></script>
+    <script src="{% static '/js/jquery.isotope.js' %}"></script>
+    <script src="{% static '/js/smooth.js' %}"></script>
+    <script src="{% static '/js/wow.min.js' %}"></script>
+    <script src="{% static '/js/script.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    
+</body>
+</html>

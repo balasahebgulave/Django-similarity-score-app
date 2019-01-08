@@ -1,0 +1,440 @@
+ #content-2-wide #main .article, #content-2-wide .main .article {
+      border-top: 1px solid #CCC;
+      }
+      .article {
+      border-top: none;
+      padding: 20px 21px 24px 20px;
+      }
+      .article, .article.on-tv, .aux-content-widget-2, .aux-content-widget-3, .aux-content-widget-4, .mini-article {
+      background: none;
+      border-radius: 0px;
+      border: none;
+      box-shadow: none;
+      margin: 0px 0px 0px 813px;
+      padding: 0;
+      }
+      .article {
+      border-radius: 12px;
+      border: 1px solid #E8E8E8;
+      padding: 10px 12px;
+      width: 640px;
+      background-color: #FFFFFF;
+      }
+      .article, .aux-content-widget-2, .aux-content-widget-3, .article.on-tv, .aux-content-widget-4 {
+		border-radius: 6px;
+		position: fixed;
+      }
+      .rightcornerlink {
+      border-left: 1px dotted #ccc;
+      float: right;
+      font-size: 11px;
+      margin: -10px 0 0 10px;
+      padding: 10px 0 1px 7px;
+      }
+      h1, h2, h3 {
+      color: #424242;
+      font: 24px Arial,sans-serif;
+      font-weight: normal;
+      }
+      h2 {
+      color: #A58500;
+      font-size: 17.5px;
+      margin: 0 0 0.5em;
+      padding: 0;
+      }
+      .rec_wrapper {
+      height: 265px;
+      position: relative;
+      }
+      .rec_const_picker {
+      height: 265px;
+      position: absolute;
+      width: 231px;
+      }
+      .rec_view {
+      height: 265px;
+      overflow: hidden;
+      position: absolute;
+      width: 246px;
+      }
+      .rec_slide {
+      height: 238px;
+      position: absolute;
+      width: 2460px;
+      }
+      .rec_page {
+      height: 238px;
+      float: left;
+      width: 246px;
+      }
+      .rec_item.rec_selected {
+      box-shadow: 0 0 0 2px #f3ce13;
+      }
+      .rec_item {
+      float: left;
+      height: 113px;
+      margin: 3px;
+      width: 76px;
+      }
+      .rec_page {
+      height: 238px;
+      float: left;
+      width: 246px;
+      }
+      .rec_nav {
+      height: 13px;
+      position: absolute;
+      top: 248px;
+      width: 100%;
+      text-align: center;
+      }
+      .rec_nav_page_num {
+      left: 7px;
+      display: none;
+      position: absolute;
+      }
+      a.rec_nav_disabled, a.rec_nav_disabled:hover {
+      color: #ccc;
+      cursor: default;
+      }
+      .rec_nav a {
+      color: #136CB2;
+      cursor: pointer;
+      line-height: 13px;
+      position: absolute;
+      }
+      .rec_nav_left {
+      right: 128px;
+      }
+      .rec_nav a {
+      color: #136CB2;
+      cursor: pointer;
+      line-height: 13px;
+      position: absolute;
+      }
+      .rec_nav_right {
+      left: 128px;
+      }
+      .rec_overviews {
+      left: 260px;
+      position: absolute;
+      height: 265px;
+      width: 360px;
+      }
+      .rec_overview {
+      height: 265px;
+      position: absolute;
+      width: 360px;
+      }
+      .rec_poster {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      height: 190px;
+      position: absolute;
+      top: 3px;
+      width: 128px;
+      }
+      .rec_actions {
+      position: absolute;
+      top: 200px;
+      }
+      .rec_actions .rec_action_divider {
+      padding-bottom: 5px;
+      }
+      .wlb_classic_wrapper {
+      position: relative;
+      }
+      input[type="hidden" i], input[type="image" i], input[type="file" i] {
+      -webkit-appearance: initial;
+      background-color: initial;
+      cursor: default;
+      padding: initial;
+      border: initial;
+      }
+      input[type="hidden" i] {
+      display: none;
+      }
+      input {
+      -webkit-appearance: textfield;
+      background-color: white;
+      -webkit-rtl-ordering: logical;
+      cursor: text;
+      padding: 1px;
+      border-width: 2px;
+      border-style: inset;
+      border-color: initial;
+      border-image: initial;
+      }
+      input, textarea, select, button {
+      text-rendering: auto;
+      color: initial;
+      letter-spacing: normal;
+      word-spacing: normal;
+      text-transform: none;
+      text-indent: 0px;
+      text-shadow: none;
+      display: inline-block;
+      text-align: start;
+      margin: 0em;
+      font: 400 13.3333px Arial;
+      }
+      input, textarea, select, button, meter, progress {
+      -webkit-writing-mode: horizontal-tb !important;
+      }
+      .wlb_wrapper {
+      position: relative;
+      }
+      .rec_details {
+      left: 145px;
+      height: 265px;
+      overflow: hidden;
+      position: absolute;
+      width: 215px;
+      }
+      .rec_details .rec-info {
+      font-size: 11px;
+      line-height: 14px;
+      }
+      .rec_overview {
+      height: 265px;
+      position: absolute;
+      width: 360px;
+      }
+      .rec_poster {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+      height: 190px;
+      position: absolute;
+      top: 3px;
+      width: 128px;
+      }
+      .rec_actions {
+      position: absolute;
+      top: 200px;
+      }
+      .rec_actions .rec_action_divider {
+      padding-bottom: 5px;
+      }
+      .wlb_classic_wrapper {
+      position: relative;
+      }
+      .btn2.primary {
+      border-color: #D5AB55 #c93 #c93 #D5AB55;
+      background: #fefcea;
+      background: -webkit-linear-gradient(top, #fefcea 0%, #f3ce00 100%);
+      background: linear-gradient(top, #fefcea 0%, #f3ce00 100%);
+      background-color: #f3ce00;
+      }
+      .rec_actions .btn2 {
+      display: block;
+      padding: 0px;
+      text-align: center;
+      width: 126px !important;
+      }
+      .btn2.medium, .btn2 {
+      font-size: 13px;
+      }
+      .btn2 {
+      line-height: 1.4em;
+      min-height: 1.6em;
+      color: #000;
+      font-family: Verdana, Arial, Sans-serif;
+      cursor: pointer;
+      border-radius: 3px;
+      }
+      .rec_details {
+			left: 152px;
+			height: 265px;
+			overflow: hidden;
+			position: absolute;
+			width: 212px;
+      }
+      .rec_details .rec-info {
+      font-size: 11px;
+      line-height: 14px;
+      }
+      .rec_details .rec-jaw-upper {
+      background: #f8f8f8;
+      position: absolute;
+      top: 0px;
+      width: 215px;
+      }
+      .rec_details .rec-jaw-upper>div.rec-title {
+      padding-top: 0px;
+      }
+      a:visited {
+      color: #70579D;
+      text-decoration: none;
+      }
+      a:link {
+      color: #136CB2;
+      text-decoration: none;
+      }
+      .nobr {
+      white-space: nowrap;
+      }
+      .rec_details .rec-jaw-upper>div {
+      padding-top: 5px;
+      }
+      .rec_details .rec-cert-genre {
+      color: #999;
+      font-size: 10px;
+      }
+      .us_pg_13 {
+      background-position: -119px -3px;
+      height: 16px;
+      width: 44px;
+      }
+      .redesign .ghost {
+      color: #CCC;
+      }
+      .rating-list {
+      border: 1px solid #efefef;
+      border-radius: 6px;
+      padding: 3px 3px 1px 4px;
+      width: 198px;
+      height: 13px;
+      font-size: 11px;
+      text-align: left;
+      }
+      .rating-list .rating-bg {
+      width: 140px;
+      background-position: 0 -27px;
+      }
+      .rating-list .rating-imdb {
+      background-position: 0 -41px;
+      }
+      .rating-stars {
+      z-index: 3;
+      }
+      .rating-list .rating-stars a {
+      width: 14px;
+      }
+      .rating a span {
+      visibility: hidden;
+      }
+      .rating-list .rating-rating {
+      margin: -1px 0 0 143px;
+      width: 40px;
+      font-size: 11px;
+      }
+      .rating-rating {
+      text-align: right;
+      font-weight: bold;
+      color: #a58600;
+      }
+      .rating-cancel, .rating-rating, .rating-stars, .rating-imdb, .rating .rating-error-icon, .rating-bg {
+      position: absolute;
+      margin: 0px;
+      }
+      .rating-rating .grey {
+      font-weight: normal;
+      color: #ccc;
+      }
+      .rating-list .rating-cancel {
+      width: 14px;
+      background-position: 0 0;
+      }
+      .rec_details .rec-outline {
+      display: block;
+      }
+      p {
+      margin: 0.5em 0 0.75em;
+      line-height: 140%;
+      padding: 0;
+      }
+      .titlePageSprite {
+      background-image: url(/images/G/01/imdb/images/title/titlePageSprite-2472869782._V_.png);
+      display: inline-block;
+      vertical-align: middle;
+      }
+      .rec_details .rec-jaw-lower {
+      background: #f8f8f8;
+      bottom: 0px;
+      position: absolute;
+      width: 215px;
+      }
+      .rec_details .rec-jaw-lower>div.rec-jaw-teeth {
+      background: transparent;
+      background: -webkit-linear-gradient(top, rgba(248,248,248,0), #f8f8f8);
+      background: linear-gradient(top, rgba(248,248,248,0), #f8f8f8);
+      display: block;
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#FFFFFFFF);
+      height: 18px;
+      margin-top: -18px;
+      padding-top: 0px;
+      width: 215px;
+      }
+      .rec_details .rec-ellipsis {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      }
+      .rec_details .rec-director, .rec_details .rec-actor {
+      height: 16px;
+      line-height: 11px;
+      }
+      strong, b {
+      font-weight: bold;
+      }
+      .rec_actions .rec_next {
+      float: right;
+      }
+      .rec_actions .btn2 {
+      display: block;
+      padding: 0px;
+      text-align: center;
+      width: 126px !important;
+      }
+      .btn2.medium, .btn2 {
+      font-size: 13px;
+      }	
+      .btn2 {
+      line-height: 1.4em;
+      min-height: 1.6em;
+      }
+      .btn2 {
+      display: inline-block;
+      text-decoration: none;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      font-family: Verdana, Arial, Sans-serif;
+      cursor: pointer;
+      border-radius: 3px;
+      background: url(/images/G/01/imdb/data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo…EiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+      background: -webkit-linear-gradient(top, #faf8f1 0%, #ece2c6 100%);
+      background: linear-gradient(top, #faf8f1 0%, #ece2c6 100%);
+      background-color: #ece2c6;
+      background-repeat: repeat-x;
+      border-width: 1px;
+      border-style: solid;
+      border-color: #E0E0E0 #C0C0C0 #C0C0C0 #E0E0E0;
+      background-color: #ECE2C6;
+      vertical-align: middle;
+      text-align: center;
+      font-weight: normal;
+      }
+      .rec_details .rec-cert-genre {
+      color: #999;
+      font-size: 10px;
+      }
+      .rec_details .rec-info {
+      font-size: 11px;
+      line-height: 14px;
+      }
+	  .desc{
+		width: 395px;
+		margin-top: 30px;
+		margin-left: 367px;
+	  }
+	  
+	  .desc h4{
+		  color:#000;
+	  }
+	.vl {
+		    border-left: 10px solid #ccc;
+    height: 550px;
+    width: 0px;
+    margin-left: 750px;
+       position: fixed;
+    margin-top: -11px;
+	}
