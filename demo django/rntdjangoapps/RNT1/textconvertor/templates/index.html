@@ -1,0 +1,151 @@
+{% load staticfiles %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Demos</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Place favicon.ico in the root directory -->
+
+
+  <link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/font-awesome.min.css'%}" />
+  <link rel="stylesheet" href="{% static '/css/fonts.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/animate.min.css' %}">
+  <link rel="stylesheet" href="{% static '/css/reset.css' %}">
+  <link rel="stylesheet" href="{% static '/css/header.css' %}">
+  <link rel="stylesheet" href="{% static '/css/style.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/service-box.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/tabs.css' %}" />
+  <link rel="stylesheet" href="{% static '/css/footer.css' %}">
+  <link rel="stylesheet" href="{% static '/css/responsive.css' %}">
+
+
+
+  <link rel="shortcut icon" href="images/favicon.png">
+
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="static/css/fonts.css" />
+  <link rel="stylesheet" href="static/css/animate.min.css">
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/header.css">
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="stylesheet" href="static/css/service-box.css" />
+  <link rel="stylesheet" href="static/css/tabs.css" />
+  <link rel="stylesheet" href="static/css/footer.css">
+  <link rel="stylesheet" href="static/css/responsive.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header id="header" class="tt-nav nav-boxed-color " style="position:fixed;top:0px;">
+      <div class="header-sticky light-header ">
+        <div class="container">
+          <div id="matrox-menu" class="menuzord">
+            <!--logo start-->
+            <a href="/" class="logo-brand">
+              <img class="retina" src="static/images/logo-new.png" alt="" />
+            </a>
+            <!--logo end-->
+            <!--mega menu start-->
+            <ul class="menuzord-menu pull-right">
+
+              <li style="font-size: 30px;padding-left: -97px;padding: 36px 292px 10px 10px;color: #000;">
+                RNT.AI Django Webapps Demos
+
+              </li>
+            </ul>
+            <!--mega menu end-->
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- slider-area end -->
+
+    <!-- content-area Start -->
+    <section class="page-content section-width">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6" style="height: 554px;">
+            <div class="hserviceBox grey" style="height: 100%;">
+              <div class="service-content" style="height: 100%;">
+                <i class="fa fa-industry "></i>
+                <h3 class="title">Optical Charactor Recognition Demo</h3>
+                <p class="description">
+                  Widely used data records – whether passport documents, invoices, bank statements, computerised receipts, business cards, mail etc
+                  it is a common method of digitising printed texts so that they can be electronically edited, searched, displayed on-line, and used in machine processes such as cognitive computing, machine
+                  translation, key data and text mining.
+                </p>
+                <br />
+
+                <a href="{% url 'homepage' %}">Click Here</a>
+              </div>
+              <i class="fa fa-industry hicon-bg"></i>
+            </div>
+          </div>
+          <div class="col-md-6" style="height: 554px;">
+            <div class="hserviceBox orange" style="height: 100%;">
+              <div class="service-content" style="height: 100%;">
+                <i class="fa fa-shopping-cart"></i>
+                <h3 class="title">SimilarityScore Demo</h3>
+                <p class="description">
+                  Similarity Score. Similarity Reports provide a summary of matching or highly similar text found in a submitted paper. ... The color of the report icon indicates the similarity score of the paper, based on the amount of matching or
+                  similar text that was uncovered.
+                </p>
+                <br />
+                <a href="score/"> Click Here</a>
+              </div> <i class="fa fa-shopping-cart hicon-bg"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <!-- content-area end -->
+
+    <footer>
+      <div class="primary-footer">
+        <div class="container" style=" margin-left: 35px;">
+
+          <div class="row">
+
+            <div class="col-md-12 copyright">
+              <img src="static/images/logo-light-icon.png" width="35px;">
+              &copy; Copyright 2018. Rabbit and Tortoise Technology Solutions.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="static/js/jquery-1.10.2.min.js"></script>
+  <script src="static/js/bootstrap.min.js"></script>
+  <script src="static/js/menuzord.js"></script>
+  <script src="static/js/jquery.isotope.js"></script>
+  <script src="static/js/smooth.js"></script>
+  <script src="static/js/wow.min.js"></script>
+  <script src="static/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+</body>
+
+</html>

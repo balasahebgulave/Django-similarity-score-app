@@ -1,0 +1,20 @@
+
+
+                        <table id="myTable" class="table table-bordered display" style="width: 100%;">
+                                <thead>
+                                        <tr>
+                                        <th>Company Name</th>
+                                        <th>Similarity Scores</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        {% for score in scores %}
+                                        
+                                        <tr>
+                                                <td>{{ score.Name }}</td>
+                                                <td>{{ score.Score }}</td>
+                                        </tr>
+                                        {% endfor %}
+
+                                </tbody>
+                        </table>

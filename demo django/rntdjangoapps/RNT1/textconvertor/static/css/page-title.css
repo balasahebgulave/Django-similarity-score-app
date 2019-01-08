@@ -1,0 +1,275 @@
+
+@import 'https://fonts.googleapis.com/css?family=Oswald';
+/*------------------------------------------------------------------
+Page title
+-------------------------------------------------------------------*/
+.page-title {
+    position: relative;
+    background-color: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page-title h1,
+.page-title h2,
+.page-title h3 {
+    margin-bottom: 0;
+}
+
+
+
+.page-title .container {
+    position: relative;
+}
+
+.breadcrumb {
+    position: relative;
+    background-color: transparent;
+    width: auto;
+    top: 50%;
+    left: auto;
+    margin: 17px auto;
+    padding: 0;
+    font-size: 14px;
+    text-align:center;
+    float:right;
+
+    
+}
+
+.breadcrumb:before {
+    display: none;
+    
+}
+    .breadcrumb li:first-child a{
+        color:#00185f;
+    }
+
+
+.breadcrumb li {
+    letter-spacing: 1px;
+
+}
+
+
+    .breadcrumb li a:hover {
+        color:#fff;
+    }
+
+.breadcrumb>.active {
+    color: #fff;
+}
+
+.page-title h2 {
+    letter-spacing:1px;
+    font-family: 'Oswald', sans-serif;
+    line-height:40px;
+    font-size:50px;
+    text-align:center;
+    line-height:50px;
+    margin-bottom:25px;
+    
+
+}
+
+.page-title span {
+    
+    display: block;
+    font-size:30px;
+    text-align:center;
+    letter-spacing:2px;
+     font-family: 'Oswald', sans-serif;
+    /*color:#00185f;*/
+}
+
+.parallax-8 {
+    background-image: url("../images/how-we-manage-bg.jpg")!important;
+}
+
+.parallax-privacy {
+    background-image: url("../images/pattern-image.jpg")!important;
+    
+}
+
+.parallax-about {
+    /*background-image: url("../images/pattern-image.jpg")!important;*/
+    background-image: url("../images/about-us-bannerc.jpg")!important;
+}
+
+.parallax-adm {
+    background-image: url("../images/banner-adm-page.jpg")!important;
+}
+.parallax-ad {
+    background-image: url("../images/banner-ad-page.jpg")!important;
+}
+.parallax-am {
+    background-image: url("../images/banner-am-page.jpg")!important;
+}
+.parallax-do {
+    background-image: url("../images/devops-bg.jpg")!important;
+}
+.parallax-ps {
+    background-image: url("../images/banner-proposal-services-page.jpg")!important;
+}
+.parallax-zo {
+    background-image: url("../images/banner-zero-to-one-page.jpg")!important;
+}
+.parallax-ts {
+    background-image: url("../images/training1.jpg")!important;
+}
+
+.parallax-ophilo {
+    background-image: url("../images/op.jpg")!important;
+    
+}
+
+.
+.parallax-inner-contact {
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 260px 0 90px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-contact {
+    background-image: url("../images/contact-us-banner.jpg")!important;
+}
+
+.parallax-default {
+    background-image: url("../images/about-banner.jpg")!important;
+}
+
+.parallax-inner-ophilo{
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 250px 0;
+    background-position: 50% 50%;
+}
+
+.parallax-inner-sub {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 80px 0;
+    background-position: 50% 50%;
+}
+
+.parallax-inner-ser {
+    /*background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: 50% 50%;*/
+     background-size: cover;
+     background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+}
+.parallax-inner {
+    /*background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: 50% 50%;*/
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.parallax-inner-about {
+    /*background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    background-position: 50% 50%;*/
+    background-size: cover;
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width: 800px) {
+    .page-title {
+        margin-top:10px;
+    }
+    .page-title h2 {
+        font-size:40px;
+        line-height:35px;
+    }
+    .page-title span {
+            
+            font-size:24px;
+            line-height:36px;
+        }
+    .breadcrumb {
+        margin-top:20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page-title {
+        margin-top:55px;
+    }
+
+    .breadcrumb {
+        margin-top:20px;
+    }
+        .page-title span {
+            margin-top: 20px;
+            font-size:24px;
+            line-height:36px;
+        }
+    .page-title h2 {
+        font-size:40px;
+        line-height:30px;
+        
+        }
+}
+
+@media screen and (max-width: 480px) {
+    .page-title {
+        margin-top:55px;
+
+    }
+
+    .breadcrumb {
+        margin-top:30px;
+    }
+        .page-title span {
+            margin-top: 60px;
+            font-size:30px;
+            line-height:36px;
+        }
+    .page-title h2 {
+        font-size:16px;
+        line-height:25px;
+        
+        }
+}
+
+@media screen and (max-width: 479px) {
+    .page-title {
+        margin-top:35px;
+    }
+    .breadcrumb {
+        margin-top:50px;
+    }
+    .page-title h2 {
+        font-size:30px;
+        line-height:45px;
+        
+        }
+    .page-title span {
+
+            font-size:20px;
+            line-height:30px;
+        }
+}

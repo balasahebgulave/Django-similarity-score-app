@@ -1,0 +1,25 @@
+{% extends "SimilarityScore/base.html" %}
+{% block content %}
+    <div class="row" style="margin-top: 30px;">
+
+        <div  class="col-md-12">
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="row" >
+                    <div class="form-group col-md-5 text-right">
+                                <label>Select company dataset file(.csv):</label>
+                            </div>    
+                    <div class="form-group col-md-3">
+                        
+                        <input type= "file" class="form-control-file" name="myfile">
+                    </div>
+                    <div class="form-group col-md-2">
+                        <button class="btn btn-primary" type="submit">Upload</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+{% endblock content %}
+

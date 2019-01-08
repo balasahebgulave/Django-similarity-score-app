@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}<br> charan
+<textarea rows="5" cols="60" style="font-family: Courier New">
+ {{text}}
+</textarea>
+{% endblock %}
